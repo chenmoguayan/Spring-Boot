@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<form th:action="@{/user}" method="get">
+    <input type="submit" value="查询">
+</form>
+<hr/>
+<form th:action="@{/user}" method="post">
+    <input type="submit" value="添加">
+</form>
+<hr/>
+<form th:action="@{/user}" method="post">
+    <input type="hidden" name="_method" value="put">
+    <input type="submit" value="修改">
+</form>
+<hr/>
+<form th:action="@{/user/Hello}" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="删除">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>查询</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>
+                <form th:action="@{/insert}" method="get">
+                    <input type="submit" value="添加">
+                </form>
+            </th>
+        </tr>
+        <tr th:each="s : ${list}">
+            <td th:text="${s.id}"></td>
+            <td th:text="${s.name}"></td>
+            <td th:text="${s.sex}"></td>
+            <td th:text="${s.age}"></td>
+            <td>
+                <a th:href="@{/update(id=${s.id})}">修改</a>
+                <form th:action="@{/stu}" method="post">
+                    <input type="hidden" name="id" th:value="${s.id}">
+                    <input type="hidden" name="_method" value="delete">
+                    <input type="submit" value="删除">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

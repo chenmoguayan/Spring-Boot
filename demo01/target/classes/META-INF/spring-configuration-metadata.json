@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "org.hj.boot.entity.Person",
+      "sourceType": "org.hj.boot.entity.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.all-pets",
+      "type": "java.util.Map<java.lang.String,java.util.List<org.hj.boot.entity.Pet>>",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.animals",
+      "type": "java.util.List<org.hj.boot.entity.Pet>",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.interests",
+      "type": "java.lang.String[]",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.pet",
+      "type": "org.hj.boot.entity.Pet",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.salarys",
+      "type": "java.util.Set<java.lang.Double>",
+      "sourceType": "org.hj.boot.entity.Person"
+    },
+    {
+      "name": "person.score",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.hj.boot.entity.Person"
+    }
+  ],
+  "hints": []
+}
